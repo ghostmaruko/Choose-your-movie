@@ -9,18 +9,17 @@ const router = createBrowserRouter([
     path: "/",
     element: <List />,
   },
-
   {
-    path: "/",
+    path: "/details",
     element: <Details />,
   },
 ]);
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <RouterProvider router={router} />
-    </>
+    </React.Fragment>
   );
 }
 
